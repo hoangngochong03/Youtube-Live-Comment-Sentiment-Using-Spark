@@ -1,0 +1,6 @@
+pyspark
+pytchat
+kafka-python
+findspark
+pandas
+numpy
