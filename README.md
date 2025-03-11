@@ -23,6 +23,10 @@ Create venv
 ```sh
 python -m venv sparkenv
 ```
+Activate venv
+```sh
+sparkenv/Scripts/activate
+```
 Install Requirement
 ```sh
 pip install -r requirements.txt
