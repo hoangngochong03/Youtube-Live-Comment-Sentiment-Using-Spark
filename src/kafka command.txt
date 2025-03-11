@@ -4,17 +4,18 @@
     - cd C:\kafka_2.12-3.6.0
     bin\windows\kafka-server-start.bat config\server.properties
 
-.\bin\kafka-console-producer.bat --broker-list localhost:9092 --topic TestTopic
+.\bin\kafka-console-producer.bat --broker-list localhost:9092 --topic TestTopic    : **producer**
 
-.\bin\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic TestTopic --from-beginning
+.\bin\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic TestTopic --from-beginning   :**consumer**
 
-bin\windows\kafka-console-producer.bat --topic news --bootstrap-server [localhost:9092](http://localhost:9092) : mở console để nhập thông tin 
+bin\windows\kafka-console-producer.bat --topic news --bootstrap-server [localhost:9092](http://localhost:9092) : **open console to write input** 
 
-bin\windows\kafka-console-consumer.bat --topic Youtubelive-comments --from-beginning --bootstrap-server localhost:9092    : Hiện thông tin từ producer
+bin\windows\kafka-console-consumer.bat --topic Youtubelive-comments --from-beginning --bootstrap-server localhost:9092    : **show information from producer**
 
-Xóa topic : bin\windows\kafka-topics.bat --delete --topic Youtubelive-comments --bootstrap-server localhost:9092
+bin\windows\kafka-topics.bat --delete --topic Youtubelive-comments --bootstrap-server localhost:9092  : **delete topic**
 
-Tạo topic: bin\windows\kafka-topics.bat --create --topic Youtubelive-comments --bootstrap-server localhost:9092 --partitions 4 --replication-factor 1
-bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092 : list topic
+Tạo topic: bin\windows\kafka-topics.bat --create --topic Youtubelive-comments --bootstrap-server localhost:9092 --partitions 4 --replication-factor 1  : **Create topic**
 
-Show Group: kafka-consumer-groups.bat --bootstrap-server localhost:9092 --list
+bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092  : **list topic** 
+
+kafka-consumer-groups.bat --bootstrap-server localhost:9092 --list : **Show group**

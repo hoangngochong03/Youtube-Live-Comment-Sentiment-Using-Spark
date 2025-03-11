@@ -1,7 +1,7 @@
 from kafka import KafkaConsumer
 import json
 
-# Kafka consumer setup
+# Kafka consumer 
 consumer = KafkaConsumer(
     'Youtubelive-comments',  # Topic name
     bootstrap_servers='localhost:9092',

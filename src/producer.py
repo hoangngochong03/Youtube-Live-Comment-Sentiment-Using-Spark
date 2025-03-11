@@ -5,7 +5,7 @@ import time
 from datetime import datetime
 # Kafka setup
 producer = KafkaProducer(
-    bootstrap_servers='localhost:9092',  # Adjust if necessary
+    bootstrap_servers='localhost:9092', 
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
 
@@ -17,10 +17,9 @@ chat = pytchat.create(video_url)
 
 # Kafka topic
 topic = 'Youtubelive-comments'
-# Producer loop to continuously send new comments
 while chat.is_alive():
     for c in chat.get().items:
-        # Prepare message to be sent to Kafka
+        # message to be sent to Kafka
         message = {
             'video_id':video_id,
             'author': c.author.name,
@@ -30,8 +29,7 @@ while chat.is_alive():
         
         # Send the message to Kafka topic
         producer.send(topic, message)
-        print(f"Sent message: {message}")
+        print(f"Sent message: {message}") # show messagew
         producer.flush()
-    
-    # Optional: sleep to avoid overwhelming the Kafka broker (adjust as necessary)
+
     time.sleep(1)
