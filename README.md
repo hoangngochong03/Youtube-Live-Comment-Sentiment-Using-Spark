@@ -18,6 +18,7 @@ Follow this video tutorial to install Kafka:
 
 ### 3. Install Required Python Packages
 Run the following command to install the required dependencies:
+
 Create venv
 ```sh
 python -m venv sparkenv
