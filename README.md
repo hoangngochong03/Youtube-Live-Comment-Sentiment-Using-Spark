@@ -1,3 +1,20 @@
+# Project Information
+◦ Train sentiment classification model: Use Spark MLlib and vihsd dataset to train a Vietnamese sentiment
+classification model.
+
+◦ Collect data from YouTube: Configure Kafka Producer to fetch live comments from YouTube Livestream.
+
+◦ Read data from Kafka: Set up Kafka Consumer and process data in batches using Spark Streaming.
+
+◦ Preprocess data: Remove emojis, icons, and normalize abbreviations.
+
+◦ Predict sentiment: Use the trained model to classify comment sentiment in batches.
+
+◦ Store data in PostgreSQL: Save classified comments and related data into the PostgreSQL database.
+
+◦ Analyze data with Power BI: Visualize and analyze using Power BI.
+
+
 # Project Setup Guide
 
 ## Requirements
