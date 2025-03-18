@@ -10,7 +10,7 @@ classification model.
 
 - **Predict sentiment:** Use the trained model to classify comment sentiment in batches.
 
-  **Store data in PostgreSQL:** Save classified comments and related data into the PostgreSQL database.
+- **Store data in PostgreSQL:** Save classified comments and related data into the PostgreSQL database.
 
 - **Analyze data with Power BI:** Visualize and analyze using Power BI.
 
